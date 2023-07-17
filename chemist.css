@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color:aqua;
+    min-height: 100vh;
+    background-image:
+	linear-gradient(to bottom, rgba(9, 167, 101, 0.856),rgba(29, 71, 61, 0.918)),  url('bg-3.jpg')
+    
+}
+
+.logo{
+    font-family: Arial;
+    color: mintcream;
+    margin-left: 25%;
+    padding-top: 90px;
+}
+.hub{
+    color: darkolivegreen;
+}
+
+.search-box{
+    padding-top: 55px; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.search-box input{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    text-align: right;
+}
+button{
+    border-radius: 5px;
+    width: 55px;
+    background-color: darkolivegreen;
+    height: 40px;
+    color: white;
+}
+button:hover{
+    color: yellow;
+    background-color: transparent;
+    border: 5px solid wheat;
+}
+
+.faq-grid{
+    margin-top: 35%;
+    /* padding-left: 10%; */
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    overflow-y: scroll;
+}
+
+.suggestion{
+    width: 200px;
+    height:150px ;
+    border: 1px solid grey;
+    margin-left: 0;
+    margin-right: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    grid-gap: 2px;
+    text-align: center;
+    color: antiquewhite;
+    font-family:sans-serif;
+    font-size: 22px;
+}
+
+.malaria{
+     background-image: url(malaria.webp);  
+}
+.cold{
+    background-image: url(cough.jpg);
+    color: rgba(113, 126, 0, 0.76);
+}
+.s03{
+    background-image: url(bg-3.jpg);
+}
+.s04{
+    background-image: url(stomach.jpg);
+}
+.s05{
+    background-image: url(cough.jpg);
+}
+.s06{
+    background-image: url(body-pains.jpg);
+}
+.s07{
+    background-image: url(carp.jpg);
+}
+.s08{
+    background-image: url(skin.jpg);
+}
+.s09{
+    background-image: url(dia.jpg);
+}
+.suggestion:hover{
+   color: yellow;
+}
+
+
+
+
+  
+@media (width >= 440px){
+    /* .container{
+        width: 100%;
+    } */
+    .faq-grid{
+         padding-left: 5%;
+      }
+
+    .suggestion{
+        grid-gap:10px;
+    }
+}
+
+@media screen and (min-width:490px ) and (max-width:900px){
+    .faq-grid{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .suggestion{
+        margin-bottom: 1.2rem;
+    }
+}
+@media (width >= 700px){
+   .suggestion{
+    width: 325px;
+    height: 400px;
+   }
+   .search-box input{
+    width: 450px;
+   }
+}
+
+/* to life */
+
+
+.dropa {
+    background-color: transparent;
+    color:rgb(71, 146, 28);
+    padding: 10px;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 160px;
+    height: 200px;
+    overflow-y: scroll;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
